@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:FileUpload ID="FileUpload1" runat="server" />
+            <asp:FileUpload ID="FileUpload1" runat="server"  />
             <asp:Button ID="Button1" runat="server" Text="ulpload" OnClick="Button1_Click" />
             <hr />
             <asp:Image ID="Image1" runat="server" />
