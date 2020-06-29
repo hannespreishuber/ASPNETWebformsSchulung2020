@@ -11,7 +11,10 @@ namespace ASPNETWebformsSchulung2020.modul03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack)
+            {
+                div1.InnerText = Text1.Value;
+            }
         }
     }
 }
