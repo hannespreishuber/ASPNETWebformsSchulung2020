@@ -11,7 +11,7 @@ namespace ASPNETWebformsSchulung2020.Modul01
 {
 
 
-    public partial class WebForm3
+    public partial class WebForm4
     {
 
         /// <summary>
@@ -24,12 +24,12 @@ namespace ASPNETWebformsSchulung2020.Modul01
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// ImageMap1-Steuerelement
+        /// Button1-Steuerelement
         /// </summary>
         /// <remarks>
         /// Automatisch generiertes Feld
         /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageMap ImageMap1;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
