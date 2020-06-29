@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <input id="Text1" type="text" runat="server"/>
+            <input id="Text1" type="text" runat="server" />
             <div id="div1" runat="server"></div>
             <input id="Submit1" type="submit" value="submit" />
         </div>
