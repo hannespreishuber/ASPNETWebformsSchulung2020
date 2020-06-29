@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\laender.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -142,6 +143,7 @@
     <Content Include="modul03\WebForm2.aspx" />
     <Content Include="modul03\WebForm3.aspx" />
     <Content Include="modul03\WebForm4.aspx" />
+    <Content Include="Modul04\export.aspx" />
     <Content Include="Modul04\ExportExcel.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -364,6 +366,13 @@
     <Compile Include="modul03\WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modul04\export.aspx.cs">
+      <DependentUpon>export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul04\export.aspx.designer.cs">
+      <DependentUpon>export.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modul04\ExportExcel.aspx.cs">
       <DependentUpon>ExportExcel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -395,7 +404,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
