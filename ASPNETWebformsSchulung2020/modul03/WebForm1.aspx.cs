@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ASPNETWebformsSchulung2020.Modul01
+namespace ASPNETWebformsSchulung2020.modul03
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,10 +16,12 @@ namespace ASPNETWebformsSchulung2020.Modul01
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var btn = new Button();
-            btn.Text = "2t Button";
-            form1.Controls.Add(btn);
-           
+            Panel2.Visible = true;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
