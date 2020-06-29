@@ -122,6 +122,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\laender.txt" />
+    <Content Include="App_Data\todo.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />

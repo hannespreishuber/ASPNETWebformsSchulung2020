@@ -14,7 +14,7 @@ namespace ASPNETWebformsSchulung2020.Modul04
         protected void Page_Load(object sender, EventArgs e)
         {
             ToDoItems = File.ReadAllLines(Server.MapPath("~/app_data/todo.txt")).ToList();
-
+            //todo.txt per Hand anlegen q&d
         }
 
         protected void Button1_Click(object sender, EventArgs e)
