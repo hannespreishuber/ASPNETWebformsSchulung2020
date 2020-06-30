@@ -152,6 +152,7 @@
     <Content Include="Modul04\WebForm2.aspx" />
     <Content Include="Modul04\WebForm3.aspx" />
     <Content Include="Modul05\CookieDemo.aspx" />
+    <Content Include="Modul06\Eingabe1.aspx" />
     <Content Include="Modul06\Laender.aspx" />
     <Content Include="Modul05\redirect.aspx" />
     <Content Include="Modul05\RequestDemo.aspx" />
@@ -439,6 +440,13 @@
       <DependentUpon>CookieDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul05\DBFake.cs" />
+    <Compile Include="Modul06\Eingabe1.aspx.cs">
+      <DependentUpon>Eingabe1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul06\Eingabe1.aspx.designer.cs">
+      <DependentUpon>Eingabe1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modul06\Laender.aspx.cs">
       <DependentUpon>Laender.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
