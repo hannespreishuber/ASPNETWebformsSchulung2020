@@ -427,6 +427,7 @@
     <Compile Include="Modul04\WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modul05\DBFake.cs" />
     <Compile Include="Modul05\MyPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
