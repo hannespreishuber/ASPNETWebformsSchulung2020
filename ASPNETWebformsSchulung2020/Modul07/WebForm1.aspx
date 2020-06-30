@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <uc1:WebUserControl1 ID="WebUserControl11" runat="server" />
+            <uc1:WebUserControl1 ID="WebUserControl11" runat="server" Farbe="silver" />
         </div>
     </form>
 </body>
