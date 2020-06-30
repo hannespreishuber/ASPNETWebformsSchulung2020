@@ -11,7 +11,7 @@
         SelectCommand="SELECT * FROM [Customers] WHERE ([CompanyName] LIKE '%' + @CompanyName + '%')">
         <SelectParameters>
          
-            <asp:ControlParameter ControlID="search" Name="CompanyName" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="search" Name="CompanyName" PropertyName="Text" Type="String" DefaultValue="%" />
         </SelectParameters>
     </asp:SqlDataSource>
 
