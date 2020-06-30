@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modul07.master.cs" Inherits="ASPNETWebformsSchulung2020.Modul07" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row">
+        <div class="col-8">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+              <div class="col-4">
+            <asp:ContentPlaceHolder ID="Seitenbereich" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+    </form>
+
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <asp:ContentPlaceHolder ID="ScriptPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

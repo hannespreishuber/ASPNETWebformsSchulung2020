@@ -160,6 +160,7 @@
     <Content Include="Modul05\SessionDemo.aspx" />
     <Content Include="Modul05\UserCounter.aspx" />
     <Content Include="Modul05\WebForm1.aspx" />
+    <Content Include="Modul07\Contentpage1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -183,6 +184,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Modul07.Master" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -498,6 +500,20 @@
     </Compile>
     <Compile Include="Modul05\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul07.Master.cs">
+      <DependentUpon>Modul07.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul07.Master.designer.cs">
+      <DependentUpon>Modul07.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modul07\Contentpage1.aspx.cs">
+      <DependentUpon>Contentpage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul07\Contentpage1.aspx.designer.cs">
+      <DependentUpon>Contentpage1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

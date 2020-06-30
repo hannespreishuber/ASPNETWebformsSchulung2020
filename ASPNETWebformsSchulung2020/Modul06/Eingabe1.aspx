@@ -43,6 +43,8 @@
       <script>
        $(function () {
         $('input:checkbox').addClass('custom-control-input');
-     });
+       });
+
+         
     </script>
 </asp:Content>
