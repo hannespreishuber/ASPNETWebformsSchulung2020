@@ -4,8 +4,7 @@
 
     <div class="form-group has-search">
         <span class="fa fa-search form-control-feedback"></span>
-
-        
+                
         <asp:TextBox ID="search" runat="server" class="form-control" placeholder="Search"></asp:TextBox>
     </div>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString1 %>" 
