@@ -161,6 +161,9 @@
     <Content Include="Modul05\UserCounter.aspx" />
     <Content Include="Modul05\WebForm1.aspx" />
     <Content Include="Modul07\Contentpage1.aspx" />
+    <Content Include="Modul07\WebForm1.aspx" />
+    <Content Include="Modul07\WebUserControl1.ascx" />
+    <Content Include="Modul08\Northwindsql.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -514,6 +517,10 @@
     </Compile>
     <Compile Include="Modul07\Contentpage1.aspx.designer.cs">
       <DependentUpon>Contentpage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul07\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
