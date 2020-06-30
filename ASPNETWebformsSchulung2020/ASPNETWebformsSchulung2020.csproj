@@ -151,6 +151,8 @@
     <Content Include="Modul04\WebForm1.aspx" />
     <Content Include="Modul04\WebForm2.aspx" />
     <Content Include="Modul04\WebForm3.aspx" />
+    <Content Include="Modul05\redirect.aspx" />
+    <Content Include="Modul05\ResponseDemo.aspx" />
     <Content Include="Modul05\WebForm1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -426,6 +428,20 @@
     </Compile>
     <Compile Include="Modul05\MyPage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\redirect.aspx.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\redirect.aspx.designer.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\ResponseDemo.aspx.cs">
+      <DependentUpon>ResponseDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\ResponseDemo.aspx.designer.cs">
+      <DependentUpon>ResponseDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul05\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
