@@ -167,6 +167,11 @@
     <Content Include="Modul07\Contentpage1.aspx" />
     <Content Include="Modul07\WebForm1.aspx" />
     <Content Include="Modul07\WebUserControl1.ascx" />
+    <Content Include="Modul08\Daten1.aspx" />
+    <Content Include="Modul08\daten2.aspx" />
+    <Content Include="Modul08\DatenSuche.aspx" />
+    <Content Include="Modul08\details.aspx" />
+    <Content Include="Modul08\EditDetails.aspx" />
     <Content Include="Modul08\Northwindsql.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -525,6 +530,41 @@
     <Compile Include="Modul07\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\Daten1.aspx.cs">
+      <DependentUpon>Daten1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\Daten1.aspx.designer.cs">
+      <DependentUpon>Daten1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\daten2.aspx.cs">
+      <DependentUpon>daten2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\daten2.aspx.designer.cs">
+      <DependentUpon>daten2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\DatenSuche.aspx.cs">
+      <DependentUpon>DatenSuche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\DatenSuche.aspx.designer.cs">
+      <DependentUpon>DatenSuche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\EditDetails.aspx.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\EditDetails.aspx.designer.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
