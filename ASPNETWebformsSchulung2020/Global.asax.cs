@@ -18,6 +18,20 @@ namespace ASPNETWebformsSchulung2020
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application.Add("users", 0);
         }
+        void Session_Start(object sender, EventArgs e)
+        {
+            Application["users"] = Convert.ToInt16(Application["users"] )+ 1;
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            Application["users"] = Convert.ToInt16(Application["users"]) - 1;
+        }
+        void Application_End(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
