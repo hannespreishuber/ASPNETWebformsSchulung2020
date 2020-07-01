@@ -7,7 +7,9 @@
                 
         <asp:TextBox ID="search" runat="server" class="form-control" placeholder="Search"></asp:TextBox>
     </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString1 %>" 
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+        EnableCaching="true" CacheDuration="600"
+        ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString1 %>" 
         SelectCommand="SELECT * FROM [Customers] WHERE ([CompanyName] LIKE '%' + @CompanyName + '%')">
         <SelectParameters>
          
