@@ -2,7 +2,7 @@
     CodeBehind="ToDoPage.aspx.cs" Inherits="ASPNETWebformsSchulung2020.Modul09.ToDoPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    Anzahl offen <%=liste.Where(x=>x.Erledigt==false).Count() %>
+    Anzahl offen 
     <div class="input-group mb-3">
         Neue Aufgabe
         <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
@@ -14,17 +14,20 @@
         </div>
     </div>
     <div class="list-group">
-        <asp:ListView ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand" DataKeyNames="Id" >
+        <asp:ListView ID="TodoListView" runat="server" 
+            ItemType="ASPNETWebformsSchulung2020.Modul09.MyToDos"
+            SelectMethod="TodoListView_GetData"
+            OnItemCommand="TodoListView_ItemCommand" DataKeyNames="Id" >
             
             <ItemTemplate>
                 <div class="list-group-item  ">
-                    <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("erledigt" )%>'
+                    <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Item.Erledigt%>'
                         ClientIDMode="Static" />
-                    <%#Eval("Datum","{0:d}") %>
+                    <%#Item.Datum.Value.ToShortDateString()%>
 
-                    <%#Eval("Bezeichnung") %>
+                    <%#Item.Bezeichnung %>
                     <asp:LinkButton ID="HyperLink1" runat="server" 
-                        CommandName="del" CommandArgument='<%#Eval("Id") %>' >
+                        CommandName="del" CommandArgument='<%#Item.Id %>' >
                     <span class="float-right">   <i class="fa fa-trash" aria-hidden="true"></i></span>
                     </asp:LinkButton>
                 </div>

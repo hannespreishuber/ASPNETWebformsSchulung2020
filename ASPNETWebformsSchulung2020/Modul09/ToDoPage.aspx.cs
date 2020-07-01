@@ -25,7 +25,7 @@ namespace ASPNETWebformsSchulung2020.Modul09
 
         }
 
-        protected void Repeater1_ItemCommand(object source, ListViewCommandEventArgs e)
+        protected void TodoListView_ItemCommand(object source, ListViewCommandEventArgs e)
         {
             switch (e.CommandName)
             {
@@ -43,17 +43,29 @@ namespace ASPNETWebformsSchulung2020.Modul09
         protected void Button2_Click(object sender, EventArgs e)
         {
             
-            for (int i = 0; i < Repeater1.Items.Count()-1; i++)
+            for (int i = 0; i < TodoListView.Items.Count()-1; i++)
             {
-                var chk = (CheckBox)Repeater1.Items[i].FindControl("CheckBox1");
+                var chk = (CheckBox)TodoListView.Items[i].FindControl("CheckBox1");
                    if (chk.Checked)
                    {
-                    var id = Repeater1.DataKeys[i].Value;
+                    var id = TodoListView.DataKeys[i].Value;
                       //SQL Command Update
                  }
             }
 
           
+        }
+
+        // Der Rückgabetyp kann in 'IEnumerable' geändert werden. Damit Paginierung und Sortierung für
+        // unterstützt werden, müssen jedoch die folgenden Parameter hinzugefügt werden:
+        //     int maximumRows
+        //     int startRowIndex
+        //     out int totalRowCount
+        //     string sortByExpression
+        public IQueryable<ASPNETWebformsSchulung2020.Modul09.MyToDos> TodoListView_GetData()
+        {
+            var db = new DbTodo();
+            return db.MyToDos;
         }
     }
 }

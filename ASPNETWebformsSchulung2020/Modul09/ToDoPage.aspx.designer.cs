@@ -33,13 +33,13 @@ namespace ASPNETWebformsSchulung2020.Modul09
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Repeater1-Steuerelement
+        /// TodoListView-Steuerelement
         /// </summary>
         /// <remarks>
         /// Automatisch generiertes Feld
         /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView Repeater1;
+        protected global::System.Web.UI.WebControls.ListView TodoListView;
 
         /// <summary>
         /// Button2-Steuerelement
