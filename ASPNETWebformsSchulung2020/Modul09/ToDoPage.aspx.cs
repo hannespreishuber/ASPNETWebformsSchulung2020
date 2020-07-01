@@ -46,6 +46,8 @@ namespace ASPNETWebformsSchulung2020.Modul09
                     var db = new DbTodo();
 
                     db.MyToDos.Remove(db.MyToDos.Find(id));
+                    //var del = new MyToDos() { Id = (int)id };
+                    //db.MyToDos.Remove(del);
                     db.SaveChanges();
                     break;
 
