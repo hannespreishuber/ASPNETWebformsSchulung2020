@@ -173,6 +173,7 @@
     <Content Include="Modul08\Daten1.aspx" />
     <Content Include="Modul08\daten2.aspx" />
     <Content Include="Modul08\DatenSuche.aspx" />
+    <Content Include="Modul08\DatenSucheSqlCommand.aspx" />
     <Content Include="Modul08\details.aspx" />
     <Content Include="Modul08\EditDetails.aspx" />
     <Content Include="Modul08\Northwindsql.txt" />
@@ -559,6 +560,13 @@
     </Compile>
     <Compile Include="Modul08\DatenSuche.aspx.designer.cs">
       <DependentUpon>DatenSuche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\DatenSucheSqlCommand.aspx.cs">
+      <DependentUpon>DatenSucheSqlCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\DatenSucheSqlCommand.aspx.designer.cs">
+      <DependentUpon>DatenSucheSqlCommand.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul08\details.aspx.cs">
       <DependentUpon>details.aspx</DependentUpon>
