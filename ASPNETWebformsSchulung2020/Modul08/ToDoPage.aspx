@@ -8,7 +8,7 @@
 
         <div class="input-group-append">
 
-            <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Add" />
+            <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Add" OnClick="Button1_Click"/>
         </div>
     </div>
     <div class="list-group">
