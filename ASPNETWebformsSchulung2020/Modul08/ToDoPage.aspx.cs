@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace ASPNETWebformsSchulung2020.Modul08
 {
-    class MyToDo
+   public class MyToDo
     {
         public int Id { get; set; }
         public string Bezeichnung { get; set; }
@@ -18,7 +18,7 @@ namespace ASPNETWebformsSchulung2020.Modul08
     }
     public partial class ToDoPage : System.Web.UI.Page
     {
-        List<MyToDo> liste = new List<MyToDo>();
+        public List<MyToDo> liste { get; set; } = new List<MyToDo>();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -71,6 +71,21 @@ namespace ASPNETWebformsSchulung2020.Modul08
         }
 
         protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            switch (e.CommandName)
+            {
+                case "del":
+                    var id = e.CommandArgument;
+                        //sql delete 
+                        break;
+
+                default:
+                    break;
+            }
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
         {
 
         }
