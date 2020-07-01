@@ -21,7 +21,7 @@
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
             <ItemTemplate>
                 <a class="list-group-item list-group-item-action list-group-item-light"
-                    href="<%#"editdetails/"+Eval("Customerid") %>">
+                    href="<%#"/modul09/editdetails/"+Eval("Customerid") %>">
                     <h2 class="black"><%#Eval("CompanyName") %></h2>
                     <p>
                         <%#Eval("ContactName") %>

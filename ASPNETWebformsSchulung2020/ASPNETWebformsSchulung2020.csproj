@@ -186,6 +186,7 @@
     <Content Include="Modul08\EditDetails.aspx" />
     <Content Include="Modul08\Northwindsql.txt" />
     <Content Include="Modul08\ToDoPage.aspx" />
+    <Content Include="Modul09\EditDetails.aspx" />
     <Content Include="Modul09\MasterDetail.aspx" />
     <Content Include="Modul09\ToDoPage.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -603,6 +604,13 @@
     <Compile Include="Modul09\Customers.cs" />
     <Compile Include="Modul09\dbNorthwind.cs" />
     <Compile Include="Modul09\DbTodo.cs" />
+    <Compile Include="Modul09\EditDetails.aspx.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul09\EditDetails.aspx.designer.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modul09\MasterDetail.aspx.cs">
       <DependentUpon>MasterDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
