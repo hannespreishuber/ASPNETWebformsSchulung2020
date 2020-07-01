@@ -18,9 +18,10 @@ namespace ASPNETWebformsSchulung2020.Modul08
     }
     public partial class ToDoPage : System.Web.UI.Page
     {
+        List<MyToDo> liste = new List<MyToDo>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var liste = new List<MyToDo>();
+
             using (var con = new SqlConnection(
               ConfigurationManager.ConnectionStrings["NorthwindConnectionString1"].ConnectionString))
             {
@@ -44,7 +45,34 @@ namespace ASPNETWebformsSchulung2020.Modul08
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-           
+            var rand = new Random();
+            using (var con = new SqlConnection(
+               ConfigurationManager.ConnectionStrings["NorthwindConnectionString1"].ConnectionString))
+            {
+                var d = DateTime.Now.AddSeconds(rand.Next(31536000));
+                var cmd = new SqlCommand("INSERT INTO  [MyTodos] (Bezeichnung,Datum) Values (@bezeichnung,@datum); SELECT CAST(scope_identity() AS int) ", con);
+                cmd.Parameters.AddWithValue("bezeichnung", TextBox1.Text);
+                cmd.Parameters.AddWithValue("datum", d);
+
+                con.Open();
+                var newid =(int) cmd.ExecuteScalar();
+                liste.Add(new MyToDo()
+                {
+                    Id = newid,
+                    Bezeichnung = TextBox1.Text,
+                    Datum = d,
+                    Erledigt = false
+                }); ;
+                Repeater1.DataSource = liste;
+                Repeater1.DataBind();
+
+            };
+
+        }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
         }
     }
 }

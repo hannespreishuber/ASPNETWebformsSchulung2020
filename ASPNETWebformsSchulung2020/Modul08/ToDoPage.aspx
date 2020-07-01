@@ -8,16 +8,21 @@
 
         <div class="input-group-append">
 
-            <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Add" OnClick="Button1_Click"/>
+            <asp:Button ID="Button1" runat="server"
+                class="btn btn-success" Text="Add" OnClick="Button1_Click" />
         </div>
     </div>
     <div class="list-group">
-        <asp:Repeater ID="Repeater1" runat="server">
+        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
             <ItemTemplate>
                 <div class="list-group-item  ">
                     <%#Eval("Datum","{0:d}") %>
 
                     <%#Eval("Bezeichnung") %>
+                    <asp:LinkButton ID="HyperLink1" runat="server" 
+                        CommandName="del" CommandArgument='<%#Eval("Id") %>' >
+                    <span class="float-right">   <i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </asp:LinkButton>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
