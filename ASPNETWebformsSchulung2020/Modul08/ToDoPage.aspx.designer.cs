@@ -39,7 +39,7 @@ namespace ASPNETWebformsSchulung2020.Modul08
         /// Automatisch generiertes Feld
         /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.ListView Repeater1;
 
         /// <summary>
         /// Button2-Steuerelement

@@ -13,10 +13,12 @@
         </div>
     </div>
     <div class="list-group">
-        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
+        <asp:ListView ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand" DataKeyNames="Id" >
+            
             <ItemTemplate>
                 <div class="list-group-item  ">
-                    <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("erledigt" )%>' />
+                    <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("erledigt" )%>'
+                        ClientIDMode="Static" />
                     <%#Eval("Datum","{0:d}") %>
 
                     <%#Eval("Bezeichnung") %>
@@ -26,7 +28,7 @@
                     </asp:LinkButton>
                 </div>
             </ItemTemplate>
-        </asp:Repeater>
+        </asp:ListView>
 
     </div>
     <asp:Button ID="Button2" runat="server" Text="speichern" class="btn btn-primary" OnClick="Button2_Click"/>

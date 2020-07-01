@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace ASPNETWebformsSchulung2020.Modul08
 {
-   public class MyToDo
+    public class MyToDo
     {
         public int Id { get; set; }
         public string Bezeichnung { get; set; }
@@ -21,9 +21,8 @@ namespace ASPNETWebformsSchulung2020.Modul08
         public List<MyToDo> liste { get; set; } = new List<MyToDo>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
             using (var con = new SqlConnection(
-              ConfigurationManager.ConnectionStrings["NorthwindConnectionString1"].ConnectionString))
+            ConfigurationManager.ConnectionStrings["NorthwindConnectionString1"].ConnectionString))
             {
                 var cmd = new SqlCommand("SELECT * FROM [MyTodos] ", con);
                 con.Open();
@@ -38,9 +37,14 @@ namespace ASPNETWebformsSchulung2020.Modul08
                         Erledigt = (bool)reader["Erledigt"]
                     });
                 }
-                Repeater1.DataSource = liste;
-                Repeater1.DataBind();
+                if (IsPostBack == false)
+                {
+
+                    Repeater1.DataSource = liste;
+                    Repeater1.DataBind();
+                }
             }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -55,7 +59,7 @@ namespace ASPNETWebformsSchulung2020.Modul08
                 cmd.Parameters.AddWithValue("datum", d);
 
                 con.Open();
-                var newid =(int) cmd.ExecuteScalar();
+                var newid = (int)cmd.ExecuteScalar();
                 liste.Add(new MyToDo()
                 {
                     Id = newid,
@@ -70,14 +74,14 @@ namespace ASPNETWebformsSchulung2020.Modul08
 
         }
 
-        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void Repeater1_ItemCommand(object source, ListViewCommandEventArgs e)
         {
             switch (e.CommandName)
             {
                 case "del":
                     var id = e.CommandArgument;
-                        //sql delete 
-                        break;
+                    //sql delete 
+                    break;
 
                 default:
                     break;
@@ -87,7 +91,26 @@ namespace ASPNETWebformsSchulung2020.Modul08
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            
+            for (int i = 0; i < Repeater1.Items.Count()-1; i++)
+            {
+                var chk = (CheckBox)Repeater1.Items[i].FindControl("CheckBox1");
+                   if (chk.Checked)
+                   {
+                    var id = Repeater1.DataKeys[i].Value;
+                      //SQL Command Update
+                 }
+            }
 
+            //foreach (RepeaterItem item in Repeater1.Items)
+            //{
+
+            //    var chk = (CheckBox)item.FindControl("CheckBox1");
+            //    if (chk.Checked)
+            //    {
+            //        //SQL Command Update
+            //    }
+            //}
         }
     }
 }
