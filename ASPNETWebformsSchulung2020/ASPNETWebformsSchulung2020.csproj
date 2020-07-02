@@ -256,6 +256,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Modul16\thumbnail.ashx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -766,6 +767,9 @@
     </Compile>
     <Compile Include="Modul16\BilderGallerie.aspx.designer.cs">
       <DependentUpon>BilderGallerie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul16\thumbnail.ashx.cs">
+      <DependentUpon>thumbnail.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
