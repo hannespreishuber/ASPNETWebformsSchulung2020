@@ -745,6 +745,7 @@
     <Folder Include="images\" />
     <Folder Include="Models\" />
     <Folder Include="Modul05\NewFolder1\" />
+    <Folder Include="Modul15\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
