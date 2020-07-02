@@ -199,6 +199,8 @@
     <Content Include="modul12\Paging.aspx" />
     <Content Include="modul12\ZeitService.aspx" />
     <Content Include="Modul14\DAtenCachen.aspx" />
+    <Content Include="Modul14\PageCaching.aspx" />
+    <Content Include="Modul14\WebUserControl1.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -700,6 +702,20 @@
     </Compile>
     <Compile Include="Modul14\DAtenCachen.aspx.designer.cs">
       <DependentUpon>DAtenCachen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul14\PageCaching.aspx.cs">
+      <DependentUpon>PageCaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul14\PageCaching.aspx.designer.cs">
+      <DependentUpon>PageCaching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul14\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul14\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
