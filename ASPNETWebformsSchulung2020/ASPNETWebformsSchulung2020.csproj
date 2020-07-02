@@ -194,6 +194,8 @@
     <Content Include="Modul10\WebForm2.aspx" />
     <Content Include="Modul10\WebForm3.aspx" />
     <Content Include="modul12\Ajaxdemo1.aspx" />
+    <Content Include="modul12\JqueryAjaxDemo.aspx" />
+    <Content Include="modul12\ZeitService.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -660,6 +662,20 @@
     </Compile>
     <Compile Include="modul12\Ajaxdemo1.aspx.designer.cs">
       <DependentUpon>Ajaxdemo1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul12\JqueryAjaxDemo.aspx.cs">
+      <DependentUpon>JqueryAjaxDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul12\JqueryAjaxDemo.aspx.designer.cs">
+      <DependentUpon>JqueryAjaxDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul12\ZeitService.aspx.cs">
+      <DependentUpon>ZeitService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul12\ZeitService.aspx.designer.cs">
+      <DependentUpon>ZeitService.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
