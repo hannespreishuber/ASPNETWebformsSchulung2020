@@ -198,6 +198,7 @@
     <Content Include="modul12\JqueryAjaxDemo.aspx" />
     <Content Include="modul12\Paging.aspx" />
     <Content Include="modul12\ZeitService.aspx" />
+    <Content Include="Modul14\DAtenCachen.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -692,6 +693,13 @@
     </Compile>
     <Compile Include="modul12\ZeitService.aspx.designer.cs">
       <DependentUpon>ZeitService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul14\DAtenCachen.aspx.cs">
+      <DependentUpon>DAtenCachen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul14\DAtenCachen.aspx.designer.cs">
+      <DependentUpon>DAtenCachen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
